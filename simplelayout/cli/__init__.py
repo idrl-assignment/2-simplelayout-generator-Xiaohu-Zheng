@@ -1,1 +1,1 @@
-from cli_generate import get_options
+from simplelayout.cli.cli_generate import get_options

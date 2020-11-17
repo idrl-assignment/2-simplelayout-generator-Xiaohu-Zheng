@@ -11,7 +11,7 @@ def get_options():
     parser.add_argument("--file_name", type=str)
     options = parser.parse_args()
 
-    if args.board_grid % args.unit_grid != 0:
+    if options.board_grid % options.unit_grid != 0:
         sys.exit()
 
     upper_value = (options.board_grid / options.unit_grid)**2

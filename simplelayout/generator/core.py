@@ -20,7 +20,7 @@ def generate_matrix(
         np.ndarray: 布局矩阵
     """
 
-    l_mat = board_grid / unit_grid
+    l_mat = int(board_grid / unit_grid)
     matr = np.zeros(l_mat * l_mat)
     positions = (np.array(positions)-1).tolist()
     matr[positions] = 1
