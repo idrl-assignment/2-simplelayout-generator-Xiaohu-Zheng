@@ -8,13 +8,13 @@ import scipy.io as sio
 
 def save_matrix(matrix, file_name):
     # TODO: 存储 matrix 到 file_name.mat, mdict 的 key 为 "matrix"
-    sio.savemat('file_name.mat', {'matrix': matrix})
+    sio.savemat(file_name + '.mat', {'matrix': matrix})
 
 
 def save_fig(matrix, file_name):
     # TODO: 将 matrix 画图保存到 file_name.jpg
     plt.imshow(matrix)
-    plt.savefig(file_name)
+    plt.savefig(file_name + '.jpg')
 
 
 def make_dir(outdir):
