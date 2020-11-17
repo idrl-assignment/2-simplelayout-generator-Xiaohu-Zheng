@@ -7,8 +7,8 @@ from simplelayout.generator import core
 def main():
     options = get_options()
     utils.make_dir(options.outdir)
-    matrix = core.generate_matrix(
-        options.board_grid, options.unit_grid, options.unit_n, options.positions)
+    matrix = core.generate_matrix(options.board_grid, options.unit_grid,
+                                  options.unit_n, options.positions)
     utils.save_matrix(matrix, options.outdir + '/' + options.file_name)
     utils.save_fig(matrix, options.outdir + '/' + options.file_name)
 

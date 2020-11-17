@@ -2,5 +2,4 @@ pytest
 numpy
 matplotlib
 scipy
-os
 # TODO: add additional package
